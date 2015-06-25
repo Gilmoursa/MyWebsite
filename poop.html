@@ -268,20 +268,19 @@
 				</div>
 
 				<div class="col-lg-6">
-					<form method="post" action="index.php">
+					<form method="post" action="mailer.php">
 						<div class="form-group">
 					    <label>Name</label>
-					    <input name="name" class="form-control" placeholder="John Doe">
+					    <input name="name" type="text" class="form-control" placeholder="John Doe"required>
 
 					    <label>Email</label>
-					    <input name="email" class="form-control" type="email" placeholder="example@email.com">
+					    <input name="email" class="form-control" type="email" placeholder="example@email.com" required>
 
 					    <label>Message</label>
-					    <textarea name="message" class="form-control" placeholder="Enter your message here"></textarea>
+					    <textarea name="message" class="form-control" placeholder="Enter your message here" required></textarea>
 
-					    <label>*What is 2+2? (Anti-spam)</label>
-							<input name="human" class="form-control" placeholder="">
-
+							<input type="text" name="verify" class="verif_box" placeholder="verify you're human" required>
+							<img class="verif_img" src="verificationimage.php? <?php echo rand(0,9999);?>" alt="verification image">
 					    <input id="submit" name="submit" type="submit" class="btn btn-default" value="Submit">
 					  </div>
 				</form>

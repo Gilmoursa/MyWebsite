@@ -24,6 +24,17 @@ textarea {
     color: #222;
 }
 
+input.verif_box {
+  display: inline-block;
+  width: 80;
+  margin-right: 5px;
+}
+input.verif_img {
+  width: 50px;
+  height: 30px;
+  vertical-align: bottom;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
